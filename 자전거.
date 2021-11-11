@@ -1,0 +1,18 @@
+#include <stdio.h>
+char brac[30];
+int open, error,i;
+int main()
+{
+   scanf("%s",brace);
+   for(i=0;brace[i]!='\0';i++)
+   {
+     if brace[i]=='(')open++;
+     else if(brace[i]==')')
+     {
+      open=open-1;
+      if(open<0)error++;
+     }
+   }
+   if(error>0||open!=0)printf("wrong rule");
+   else printf(right rule");
+}
